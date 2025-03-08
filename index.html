@@ -29,9 +29,15 @@
     </style>
 </head>
 <body>
-    <h2>Kalo gak bituh uang untuk bayar hutang <br>pasti saya garap besok pagi bang 🥱</h2>
+    <h2>Video dari Google Drive</h2>
     <div class="video-container">
-        <iframe id="videoPlayer" src="https://drive.google.com/file/d/1t_YqGB88fYLJl04qgsYsBSV3Ysf7SLjz/preview" allowfullscreen></iframe>
+        <iframe id="videoPlayer" allowfullscreen loading="lazy" referrerpolicy="no-referrer" allow="autoplay; encrypted-media" sandbox="allow-scripts allow-same-origin"></iframe>
     </div>
+    
+    <script>
+        window.onload = function() {
+            document.getElementById("videoPlayer").src = "https://drive.google.com/file/d/1t_YqGB88fYLJl04qgsYsBSV3Ysf7SLjz/preview";
+        };
+    </script>
 </body>
 </html>
